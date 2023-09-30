@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <title>Register AI Model to Registry</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.3/dist/web3.min.js"></script>
+    <!-- <script type="module"src =  'https://cdn.jsdelivr.net/npm/ipfs-http-client@60.0.1/+esm' ></script> -->
+    <script src="contract.js"></script>
+  </head>
+  <body>
+    <h1>Register AI Model to Registry</h1>
+    <form id="myForm">
+      <table>
+        <tr>
+          <td>
+            <label for="input1">Client Identifier (Unique)</label>
+            <input type="text" id="input1" name="input1" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="input2">AI Model Type</label>
+            <input type="text" id="input2" name="input2" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="input3">Dataset (Encrypted) Hash</label>
+            <input type="text" id="input3" name="input3" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="input4">Dataset Metadata Hash</label>
+            <input type="text" id="input4" name="input4" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="input5">AI Model Hash</label>
+            <input type="text" id="input5" name="input5" />
+          </td>
+        </tr>
+      </table>
+      <input type="button" value="Submit" onclick="invokeContract()" />
+      <tr>
+        <td>
+          <div id="txDetails"></div>
+        </td>
+      </tr>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+{
+  "model-type": "diabetes-prediction",
+  "algorithm": [
+    {
+      "name": "logical-regression",
+      "hyper-parameters": [
+        {
+          "name": "optimization",
+          "value": "lbfgs"
+        },
+        {
+          "name": "penalty",
+          "value": "l1"
+        },
+        {
+          "name": "C",
+          "value": "0.45"
+        }
+      ]
+    }
+  ],
+  "model-performance": [
+    {
+      "name": "train-accuracy",
+      "value": "0.7890"
+    },
+    {
+      "name": "test-accuracy",
+      "value": "0.7890"
+    },
+    {
+      "name": "precision",
+      "value": "0.80292"
+    },
+    {
+      "name": "recall",
+      "value": "0.9876"
+    },
+    {
+      "name": "auc",
+      "value": "0.53065"
+    }
+  ],
+  "coordinates": [
+    -122.8096695,
+    38.8364983,
+    1.96
+  ],
+  "place": "21km ENE of Mumbai",
+  "dataset-features": [
+    "preg",
+    "plas",
+    "pres",
+    "skin",
+    "test",
+    "mass",
+    "pedi",
+    "age",
+    "class"
+  ],
+  "test-data-fraction": 0.25
+}
